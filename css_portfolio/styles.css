@@ -1,0 +1,234 @@
+/* rgba(33, 33, 33, 1) основний колік чорний */
+/* rgba(117, 117, 117, 1) вторичний колік чорний з прозорістю */
+/* rgba(33, 150, 243, 1) голубий колік використовується при наведені */
+/* rgba(255, 255, 255, 1) білий колір шрифту при наведені */
+/* focus тег фокусированя */
+/* hover туг наведеня */
+/* active зажиаєш і міняє колік */
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+li,ul{
+  padding-left: 0;
+  margin: 0;
+}
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /*outline:1px solid red;*/
+}
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+body {
+  font-family: Roboto;
+}
+:root {
+  --accent-color:#2196F3;
+}
+/* .remove-dots{list-style:none;} видалити крапки */
+.remove-dots {
+  /*list-style:none;*/
+  list-style-type: none;
+}
+
+/* .remove-underscores{text-decoration:none;} видалити підкреслення */
+.remove-underscores {
+  text-decoration: none;
+}
+
+* {
+  color:#212121;
+}
+
+header{
+  border-bottom: 1px solid #ECECEC;
+}
+
+.page-header .container  {
+  display: flex;
+  align-items: center;
+}
+.header-list{
+  display: flex;
+}
+.header-contact{
+  display: flex;
+}
+.logo{
+  margin-right: 93px;
+}
+.contact-flex{
+  margin-left: auto;
+}
+.header-item:not(:last-child){
+  margin-right: 50px;
+}
+
+.site-nav{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.site-nav:focus,
+.site-nav:hover,
+.site-nav:active
+{
+  color:var(--accent-color);
+}
+.testimony {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.contact{
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.contact:focus,
+.contact:hover,
+.contact:active{
+color:var(--accent-color);
+}
+
+.logo{
+  color: #212121;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+}
+.logo-footer {
+  color: #ffffff;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+}
+.logo-blu{
+  color: #2196F3;
+}
+
+.aside{
+  padding-bottom: 50px;
+  padding-top: 94px;
+  display: flex;
+  justify-content: center;
+}
+
+.aside-nav{
+  background-color: #F5F4FA;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 4px;
+  border: 2px solid #F5F4FA;
+  padding: 6px 22px;
+  margin-left: 8px;
+}
+.aside-nav:focus,
+.aside-nav:hover,
+.aside-nav:active{
+  background-color:var(--accent-color);
+  color: #ffffff;
+}
+
+.obligatory-flex{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  padding-bottom: 94px;
+
+}
+.obligatory-card{
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.obligatory-title{
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 4px;
+}
+.obligatory-lead{
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
+.obligatory-img{
+  display: block;
+}
+.border{
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  box-sizing: border-box;
+}
+.title{
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  padding-bottom: 4px;
+  padding-top: 20px;
+}
+.lead{
+  color: #757575;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.footer-pad{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer{
+  background-color: #2F303A;
+}
+.footer-map{
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer-contact{
+  color:rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer-list{
+  padding-top: 20px;
+}
+.footer-list-pad{
+  padding-bottom: 9px;
+}
+.footer-contact:focus,
+.footer-contact:hover,
+.footer-contact:active{
+  color: #ffffff;
+}
+.obligatory{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
