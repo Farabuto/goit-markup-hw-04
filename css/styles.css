@@ -10,7 +10,7 @@ li,ul{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    /*outline:1px solid red;*/
+    /* outline:1px solid red; */
 }
 body{
     font-family: Roboto,sans-serif; 
@@ -253,6 +253,20 @@ body{
     text-align: center;
     padding-bottom: 16px;
 }
+/* --Постоянные клиенты-- */
+.customers{
+    background-color: #ffffff;
+}
+.customers-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+    padding-top: 94px;
+}
+/* ----futer---- */
 .footer-pad{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -283,28 +297,128 @@ body{
 .footer-contact:active {
     color: #ffffff;
 }
+/* -------svg heder----- */
+.communication{
+    
+}
 /* -------svg------- */
 .masters-soc-list{
     display: flex;
     justify-content: center;
 }
+.masters-soc-imet{
+    margin-right:5px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+}
 .masters-soc-link{
     width: 44px;
     height: 44px;
-    background-color: tomato;
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-    margin-bottom: 30px;
-    
+    align-items: center;    
 }
 .masters-soc-icon{
-    fill: #212121;
+    fill: #AFB1B8;
 }
 .masters-soc-link:hover,
 .masters-soc-link:focus,
 .masters-soc-link:active{
     background-color: #2196F3;
+}
+
+.masters-soc-link:hover .masters-soc-icon{
+    fill: #ffffff;
+}
+/* ----- svg activity----- */
+.activity-soc-imet{
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  
+}
+.activity-soc-icon{
+    width: 70px;
+}
+
+/* --Постоянные клиенты svg-- */
+
+.customers-list{
+    display: flex;
+    justify-content: center;
+}
+.customers-imet{
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 94px;
+}
+.customers-link{
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    }
+.customers-icon{
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+}
+.customers-imet:hover{
+    border-color: #2196F3;
+}
+.customers-imet:hover .customers-icon{
+    fill: #2196F3;
+}
+
+/* ---footer svg--- */
+.footer-soc-flex{
+    display:flex;
+    align-items:baseline;
+}
+.footer-soc-bloc{
+    width: 231px;
+}
+.footer-soc-logo{
+    margin-left: 70px;
+    width: 206px;
+}
+.footer-soc-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase; 
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.footer-soc-list{
+    display: flex;
+}
+.footer-soc-imet {
+    margin-right: 10px;
+
+}
+.footer-soc-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+.footer-soc-link:hover{
+    background-color: #2196F3;
+}
+.footer-soc-icon{
+    fill: #ffffff;
 }
