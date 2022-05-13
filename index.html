@@ -9,19 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+          integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
 </head>
 
 <body>
-<!--cap-->    
+<!--H-E-A-D-E-R-->    
     <header class="page-header">
         <div class="container">
-                <a class="logo remove-underscores" href="#">
+            <nav class="nav">
+                <a class="logo remove-underscores logo-header" href="#">
                     <span class="logo-blu">Web</span>Studio
                 </a>
-            <nav>
                 <ul class="header-list remove-dots">
                     <li class="header-item"><a class="site-nav remove-underscores testimony" href="./index.html">Студия</a></li>
                     <li class="header-item"><a class="site-nav remove-underscores " href="./portfolio.html">Портфолио</a></li>
@@ -30,30 +32,34 @@
             </nav>
             <div class="contact-flex">
                 <ul class="header-contact remove-dots">
-                    <li class="header-item"><a class="contact remove-underscores" href="mailto:info@devstudio.com">
+                    <li class="header-item">
+                        <a 
+                        class="contact remove-underscores " href="mailto:info@devstudio.com">
                         <svg class="communication" width="16" height="12">
-                            <usc href="./images/symbol-defs.svg#icon-Logo"></usc>
-                        </svg>info@devstudio.com</a>
+                            <use  href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+                        </svg>
+                       info@devstudio.com</a>
                     </li>
                     <li class="header-item">
                         <a class="contact remove-underscores" href="tel:+380961111111">
-                        <svg class="communication" width="10" height="16" >
-                            <usa href="./images/symbol-defs.svg#icon-Logo"></usa>
-                        </svg> +38 096 111 11 11</a>
+                            <svg class="communication" width="10" height="16" >
+                                <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                            </svg> +38 096 111 11 11    
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-    <!--Order a service-->
     <main>
+    <!--Order a service РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА-->
         <section class="padding-bottom">
             <div class="container">
-                <h1 class="title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА </h1>
+                <h1 class="title"> ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА </h1>
                 <button type="button" class="button order"> Заказать услугу </button>
             </div>
         </section>
-    <!--Our advantages-->
+    <!--Our advantages ПЕРЕВАГИ-->
         <section class="activity">
             <div class="container">  
                 <ul class="activity-text remove-dots">
@@ -96,11 +102,11 @@
                 </ul>
             </div>
         </section>
-    <!--What we do-->
+    <!--What we do Чем мы занимаемся-->
         <section class="lesson-section">
             <div class="container">
                 <h2 class="heading heading-top">Чем мы занимаемся</h2>
-                <ul class="activity-img remove-dots">
+                <ul class="activity-cou-img remove-dots">
                     <li class="activity-img">
                         <img src="./images/img0.jpg" alt="верстка" width="370" height="294">
                     </li>
@@ -113,15 +119,17 @@
                 </ul>
             </div>
         </section>
-    <!--Our team-->
+    <!--Our team -Наша команда--->
         <section class="items">
             <div class="container">
                 <h2 class="heading">Наша команда</h2>
                 <ul class="card remove-dots">
                     <li class="heading-card">
-                        <img src="./images/team/img0.jpg" alt="Игорь Демьяненко" width="270" height="260">
-                        <h3 class="headline card-text">Игорь Демьяненко</h3>
-                        <p class="text cart-position" >Product Designer</p>
+                        <img class="img-block" src="./images/team/img0.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                        <div class="items-text">
+                            <h3 class="card-text">Игорь Демьяненко</h3>
+                            <p class="text cart-position">Product Designer</p>
+                        </div>
                         <ul class="masters-soc-list remove-dots">
                             <li class="masters-soc-imet">
                                 <a href="" class="masters-soc-link ">
@@ -154,9 +162,11 @@
                         </ul>
                     </li>
                     <li class="heading-card">
-                        <img src="./images/team/img1.jpg" alt="Ольга Репина" width="270" height="260">
-                        <h3 class="headline card-text">Ольга Репина</h3>
-                        <p class="text cart-position" >Frontend Developer</p>
+                        <img class="img-block" src="./images/team/img1.jpg" alt="Ольга Репина" width="270" height="260">
+                        <div class="items-text">
+                            <h3 class="card-text">Ольга Репина</h3>
+                            <p class="text cart-position">Frontend Developer</p>
+                        </div>
                         <ul class="masters-soc-list remove-dots">
                             <li class="masters-soc-imet">
                                 <a href="" class="masters-soc-link">
@@ -189,9 +199,11 @@
                         </ul>
                     </li>
                     <li class="heading-card">
-                        <img src="./images/team/img2.jpg" alt="Николай Тарасов" width="270" height="260">
-                        <h3 class="headline card-text">Николай Тарасов</h3>
-                        <p class="text cart-position" >Marketing</p>
+                        <img class="img-block" src="./images/team/img2.jpg" alt="Николай Тарасов" width="270" height="260">
+                        <div class="items-text">
+                            <h3 class="card-text">Николай Тарасов</h3>
+                            <p class="text cart-position">Marketing</p>
+                        </div>
                         <ul class="masters-soc-list remove-dots">
                             <li class="masters-soc-imet">
                                 <a href="" class="masters-soc-link">
@@ -224,9 +236,11 @@
                         </ul>
                     </li>
                     <li class="heading-card">
-                        <img src="./images/team/img3.jpg" alt="Михаил Ермаков" width="270" height="260">
-                        <h3 class="headline card-text">Михаил Ермаков</h3>
-                        <p class="text cart-position" >UI Designer</p>
+                        <img class="img-block" src="./images/team/img3.jpg" alt="Михаил Ермаков" width="270" height="260" >
+                        <div class="items-text">
+                            <h3 class="card-text">Михаил Ермаков</h3>
+                            <p class="text cart-position">UI Designer</p>
+                        </div>
                         <ul class="masters-soc-list remove-dots">
                             <li class="masters-soc-imet">
                                 <a href="" class="masters-soc-link">
@@ -261,7 +275,7 @@
                 </ul>
             </div>
         </section>
-    <!--customers-->    
+    <!--customers Постоянные клиенты-->    
         <section class="customers">
             <div class="container">
                 <h2 class="customers-title">Постоянные клиенты</h2>
@@ -338,29 +352,29 @@
                     <ul class="remove-dots footer-soc-list">
                         <li class="footer-soc-imet">
                             <a class="footer-soc-link" href="">
-                                <svg class="footer-soc-icon  width="20" height="20"" >
-                                    <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                                <svg class="footer-soc-icon " width="20px" height="20px">
+                                <use href=" ./images/symbol-defs.svg#icon-instagram-2"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-soc-imet">
                             <a class="footer-soc-link" href="">
-                                <svg class="footer-soc-icon  width="20" height="20"">
-                                    <use href="./images/symbol-defs.svg#icon-Group"></use>
+                                <svg class="footer-soc-icon " width="20px" height="20px">
+                                <use href=" ./images/symbol-defs.svg#icon-Group"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-soc-imet">
                             <a class="footer-soc-link" href="">
-                                <svg class="footer-soc-icon  width="20" height="20"">
-                                    <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                                <svg class="footer-soc-icon " width="20px" height="20px">
+                                <use href=" ./images/symbol-defs.svg#icon-facebook-1"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-soc-imet">
                             <a class="footer-soc-link" href="">
-                                <svg class="footer-soc-icon  width="20" height="20"">
-                                    <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                                <svg class="footer-soc-icon  " width="20px" height="20px">
+                                <use href=" ./images/symbol-defs.svg#icon-linkedin-1"></use>
                                 </svg>
                             </a>
                         </li>
