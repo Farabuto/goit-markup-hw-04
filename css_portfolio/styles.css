@@ -5,6 +5,9 @@
 /* focus тег фокусированя */
 /* hover туг наведеня */
 /* active зажиаєш і міняє колік */
+
+
+/* css ПОРТФОЛІО */
 p,h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
@@ -38,14 +41,15 @@ body {
 * {
   color:#212121;
 }
-
+img{
+  display: block;
+}
 header{
   border-bottom: 1px solid #ECECEC;
 }
 /* ---H-E-A-D-E-R */
 .page-header {
   border-bottom: 1px solid #ECECEC;
-  margin-bottom: 94px;
 }
 .page-header .container {
   display: flex;
@@ -117,6 +121,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #757575;
 }
 .contact:focus,
 .contact:hover,
@@ -145,7 +150,7 @@ header{
   font-size: 16px;
   line-height: 26px;
   border-radius: 4px;
-  border: 2px solid #F5F4FA;
+  border: var(--accent-color);
   padding: 6px 22px;
 }
 .aside-nav:focus,
@@ -153,10 +158,15 @@ header{
 .aside-nav:active {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 /* --АСОРТИМЕНТ-- */
-.div-section{
+.pad-section{
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 .obligatory {
   position: absolute;
@@ -183,6 +193,7 @@ header{
   margin-bottom: 30px;
 
 }
+
 .obligatory-card:hover{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -285,7 +296,7 @@ address{
 .footer-soc-list {
   display: flex;
 }
-.footer-soc-imet {
+.footer-soc-imet:not(:last-child) {
   margin-right: 10px;
 }
 .footer-soc-link {
