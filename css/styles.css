@@ -364,7 +364,8 @@ body{
 .customers-link:hover {
     border-color: #2196F3;
 }
-.customers-link:hover .customers-icon {
+.customers-link:hover .customers-icon 
+.customers-link:focus .customers-icon{
     fill: #2196F3;
 }
 /*---F-O-O-T-E-R---*/
