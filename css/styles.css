@@ -105,7 +105,6 @@ body{
     line-height: 16px;
     letter-spacing: 0.02em;
     display: flex;
-    justify-content: center;
     align-items: center;
     fill: #757575;
 }
@@ -122,10 +121,16 @@ body{
 
 /*---РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА---*/
 .padding-bottom{
-    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1600px;
     padding-bottom: 200px;
     padding-top: 200px;
     background: #2F303A;
+   
+    
+    
 
     background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
@@ -134,7 +139,11 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: block;
+}
+.container.padding-bottom{
+    display: flex;
+        justify-content: center;
+        align-items: center;
 }
 .title {
     color: #ffffff;
@@ -209,8 +218,7 @@ body{
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    align-items: center;
 }
 .activity-soc-icon {
     width: 70px;
@@ -361,16 +369,20 @@ body{
     height: 60px;
     fill: #AFB1B8;
 }
-.customers-link:hover {
-    border-color: #2196F3;
+.customers-link:hover,
+.customers-link:focus{
+    border-color: #2196F3
 }
-.customers-link:hover .customers-icon 
-.customers-link:focus .customers-icon{
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
     fill: #2196F3;
 }
+
 /*---F-O-O-T-E-R---*/
 .footer {
     background-color: #2F303A;
+    /* fill: #2196F3;
+    border-color: #2196F3; */
 }
 .footer-pad{
     padding-top: 60px;
